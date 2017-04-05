@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+  <style>
+      .header img{
+          height: 50px;
+          width:50px;
+          
+      }
+      .header a{
+          font-size: 1.4em;
+          color: cadetblue;
+          text-decoration: none;
+          cursor: pointer;
+          padding: 0px;
+         
+          
+      }
+      .btn-sm
+      {
+          background-color: cadetblue;
+      }
+      .footerCodebus{
+          height: 70px;
+          background-color: black;
+          width: 100%;
+      }
+      .backgroundbus{
+          height: 600px;
+          width: 100%;
+         margin: 0px;
+         padding: 0px;  
+      }
+      .busimage{
+          height: 600px;
+          width: 100%;
+            margin: 0px;
+         padding: 0px; 
+      }
+   
+      .footerCodebus{
+          height: 50px;
+          background-color: black;
+          width: 100%;
+      }
+      .footerpara{
+          color: white;
+          float: right;
+          margin-top: 15px;
+    }
+       .companyname{
+          color: darkorange;
+      }
+     .social{
+          margin-top: 10px;
+      }
+       nav{
+          height: 55px;
+      }
+      .container-fluid{
+          margin-top: 5px;
+      }
+      .container{
+          height: 600px;
+          background-color: white;
+      }
+      .tourlist{
+         height: 200px;
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          background-color: antiquewhite;
+          border:3px solid cadetblue;
+          border-radius: 5px;
+      }
+      .tourlist1{
+         height: 250px;
+          margin: 0px;
+          padding: 0px;
+          width: 100%;
+          background-color: antiquewhite;
+          border:3px solid cadetblue;
+          border-radius: 5px;
+      }
+      .tourname{
+          margin: 0px;
+          padding: 0px;
+          height: 50px;
+          width: 100%;
+          background-color: darkorange;
+      }
+      .tournameinp{
+         margin: 0px;
+          margin-left: 20px;
+          padding: 5px;
+          font-family: sans-serif;
+          font-size: 2em;
+          color: white;
+      }
+      .customername{
+          height: 50px;
+          background-color: lightcyan;
+      }
+      .customernameenter{
+          margin: 0px;
+          padding: 2px;
+          font-family: sans-serif;
+          
+          color: black;
+      }
+      
+      .btnrate{
+          background-color: darkorange;
+          border: 1px solid darkorange;
+          border-radius: 3px;
+          color: white;
+          font-size: 1em;
+          
+      }
+      .btnbook{
+          background-color: cadetblue;
+          border: 2px solid darkorange;
+          border-radius: 5px;
+          color: white;
+          font-size: 1em;
+          width:30%;
+      }
+      .customertbl{
+          height: 100px;
+          width: 100%;
+          border: none;
+      }
+      .customertbl1{
+          height: 150px;
+          width: 100%;
+          border: none;
+      }
+      table{
+          margin-top: 25px;
+          margin-left: 25px;
+      }
+     th{
+          color: cadetblue;
+      }
+      td{
+          
+      }
+    </style>
+<body>
+
+    <!--Header End-->
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="header">
+                <img src="Content/Images/codebus%20logo.png" alt="logo"/>
+                <a><strong>CodeBus</strong></a>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="Tour List.html"><span class="glyphicon glyphicon-book"></span>  Tour List</a></li>
+                    <li><a href="Schedule.html"><span class="glyphicon glyphicon-bell"></span>  Schedule</a></li>
+                    <li class="active"><a href="Booking.html"><span class="glyphicon glyphicon-tags"></span>  Booking</a></li>
+                    <li><a href="Contact Us.html"><span class="glyphicon glyphicon-earphone"></span>  Contact Us</a></li>
+
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+               <div class="form-group-sm">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-success btn-sm">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+            </form>
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+       <div class="container">
+           <h3 style="text-align:center;color:cadetblue;">Our Customers Booking</h3>
+   <div class="tourlist">
+           <div class="tourname">
+           <p class="tournameinp">Kanpur <i class="fa fa-arrow-right"></i> Delhi</p>
+           </div>
+       <!--div class="customername">
+           
+                 <div class="customernameenter"><h4><strong>&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;&nbsp;&nbsp;&nbsp;Inshu Malhotra&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                     <button class="btnrate">3.8/5</button><button class="btnbook">Booked</button></h4></div>
+       </div>
+            <div class="customername">
+               <div class="customernameenter"><h4><strong>&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;&nbsp;&nbsp;&nbsp;Neha Gupta&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                         <button class="btnrate">4.2/5</button><button class="btnbook">Booked</button></h4></div>
+       
+                   </div-->
+       <table class="customertbl">
+           <tr>
+               <th>S.No</th>
+               <th>Customer Name</th>
+               <th>User Rating</th> 
+               <th>Booking Status</th>
+           </tr>
+           <tr>
+               <td>1.</td>
+               <td>Inshu Malhotra </td>
+               <td><button class="btnrate">3.8/5</button></td> 
+               <td><button class="btnbook">Booked</button></td>
+           </tr>
+           <tr>
+               <td>2.</td>
+               <td>Neha Gupta</td>
+               <td><button class="btnrate">3.8/5</button></td> 
+               <td><button class="btnbook">Booked</button></td>
+           </tr>
+       </table>
+       
+   </div><br>
+            <div class="tourlist1">
+           <div class="tourname">
+           <p class="tournameinp">Delhi <i class="fa fa-arrow-right"></i> Mumbai</p>
+           </div>
+       <!--div class="customername">
+           
+                 <div class="customernameenter"><h4><strong>&nbsp;&nbsp;&nbsp;&nbsp;1.&nbsp;&nbsp;&nbsp;&nbsp;Inshu Malhotra&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                     <button class="btnrate">3.8/5</button><button class="btnbook">Booked</button></h4></div>
+       </div>
+            <div class="customername">
+               <div class="customernameenter"><h4><strong>&nbsp;&nbsp;&nbsp;&nbsp;2.&nbsp;&nbsp;&nbsp;&nbsp;Neha Gupta&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                         <button class="btnrate">4.2/5</button><button class="btnbook">Booked</button></h4></div>
+       
+                   </div-->
+       <table class="customertbl1">
+           <tr>
+               <th>S.No</th>
+               <th>Customer Name</th>
+               <th>User Rating</th> 
+               <th>Booking Status</th>
+           </tr>
+           <tr>
+               <td>1.</td>
+               <td>Anurag Tripathi</td>
+               <td><button class="btnrate">2.8/5</button></td> 
+               <td><button class="btnbook">Booked</button></td>
+           </tr>
+           <tr>
+               <td>2.</td>
+               <td>Prateek Shukla</td>
+               <td><button class="btnrate">4.1/5</button></td> 
+               <td><button class="btnbook">Pending</button></td>
+           </tr>
+           <tr>
+               <td>3.</td>
+               <td>Akash Tripathi</td>
+               <td><button class="btnrate">3.1/5</button></td> 
+               <td><button class="btnbook">Pending</button></td>
+           </tr>
+       </table>
+       
+   </div>
+    
+    </div>
+    <!--Footer Start-->
+    <div class="footerCodebus">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Content/Images/fb.png" class="social" style="height:30px;width:30px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Content/Images/twitter.png" class="social" style="height:30px;width:30px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Content/Images/Instagram.png" class="social" style="height:30px;width:30px;"> 
+        <h4 class="footerpara">&copy;2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developed By <strong class="companyname">Codelover</strong>.All right reserved.</h4>
+    </div>
+    <!--Footer End-->
+
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</body>
+</html>

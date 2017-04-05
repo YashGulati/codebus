@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+  <style>
+      .header img{
+          height: 50px;
+          width:50px;
+          
+      }
+      .header a{
+          font-size: 1.4em;
+          color: cadetblue;
+          text-decoration: none;
+          cursor: pointer;
+          padding: 0px;
+         
+          
+      }
+      .btn-sm
+      {
+          background-color: cadetblue;
+      }
+      .footerCodebus{
+          height: 50px;
+          background-color: black;
+          width: 100%;
+      }
+      .backgroundbus{
+          height: 600px;
+          width: 100%;
+         
+      }
+      .busimage{
+          height: 600px;
+          width: 100%;
+            margin: 0px;
+         padding: 0px; 
+      }
+   
+    
+   
+     .footerpara{
+          color: white;
+          float: right;
+          margin-top: 15px;
+          
+      }
+      .companyname{
+          color: darkorange;
+      }
+      nav{
+          height: 55px;
+      }
+      .container-fluid{
+          margin-top: 5px;
+      }
+      .row{
+          margin-top: 100px;
+          height: 150px;
+          background-color: white;
+          border: 2px solid cadetblue;
+          
+      }
+      .col-lg-4{
+          padding: 0px;
+        margin: 0px;
+          height: 146px;
+           background-color: darkorange;
+      }
+      .col-lg-8{
+         padding: 0px;
+        margin: 0px;
+          height: 146px;
+          background-color: whitesmoke;
+      }
+      .container{
+          height: 700px;
+          background-color: white;
+      }
+      .social{
+          margin-top: 10px;
+      }
+      .buslogo{
+          
+          height: 50px;
+          width: 50px;
+          float: left;
+          margin-top: 20px;
+          margin-right: 20px;
+          margin-left: 10px;
+          position: relative;
+      }
+      .fa-ticket{
+          font-size: 25px;
+          margin-left: 70px;
+          display: inline;
+          position: absolute;
+      }
+      .content1{
+          height: 146px;
+          width: 30%;
+          float: left;
+          background-color: white;
+          padding: 0px;
+        
+      }
+      .content2{
+          height: 146px;
+          width: 25%;
+          float: left;
+          background-color: white;
+          padding: 0px;
+        
+      }
+      .content3{
+          height: 146px;
+          width: 25%;
+          float: left;
+          background-color: white;
+          padding: 0px;
+        
+      }
+      .content4{
+           height: 146px;
+          width: 20%;
+          float: left;
+          background-color: white;
+          padding: 0px;
+        
+      }
+      .busdetail{
+          padding: 0px;
+      }
+      .srctodes{
+          color: cadetblue;
+          margin-left: 10px;
+          margin-top: 10px;
+          text-align: center;
+          
+      }
+      .timing{
+          text-align: center;
+      }
+      .totaltime{
+          text-align: center;
+      }
+      .long-arrow-right{
+          font-size: 0.5em;
+          margin-top: 10px;
+      }
+      .rs{
+          font-size: 2em;
+          float: right;
+          margin-right: 10px;
+      }
+      .boardingpoint{
+          color: crimson;
+          text-decoration: none;
+          margin-left: 30px;
+          
+      }
+      .boardingpoint1{
+          color: crimson;
+          text-decoration: none;
+          margin-left: 50px;
+          
+      }
+      .cancelation{
+          margin-top: 50px;
+          color: crimson;
+          text-decoration: none;
+        
+          
+          
+      }
+      .boardingpoint:hover{
+          color: cadetblue; 
+          text-decoration: none;
+      }
+      .btnrate{
+          background-color: darkorange;
+          border: 1px solid darkorange;
+          border-radius: 3px;
+          color: white;
+          font-size: 1em;
+        margin-top: 40px;
+          margin-left: 50px;
+          
+      }
+      .btnrate1{
+          background-color: cadetblue;
+          border: 1px solid cadetblue;
+          border-radius: 3px;
+          color: white;
+          font-size: 1em;
+        margin-top: 50px;
+          margin-left: 50px;
+          
+      }
+      .btnrate2{
+          background-color: crimson;
+          border: 1px solid crimson;
+          border-radius: 3px;
+          color: white;
+          font-size: 1em;
+          position: relative;
+          margin-left: 50px;
+          
+      }
+      .seat{
+       
+          float: left;
+          margin-top: 40px;
+          margin-right: 20px;
+          margin-left: 30px;
+          position: relative;
+          
+      }
+    </style>
+<body>
+
+    <!--Header End-->
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="header">
+                <img src="Content/Images/codebus%20logo.png" alt="logo"/>
+                <a><strong>CodeBus</strong></a>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="Tour List.html"><span class="glyphicon glyphicon-book"></span>  Tour List</a></li>
+                    <li class="active"><a href="Schedule.html"><span class="glyphicon glyphicon-bell"></span>  Schedule</a></li>
+                    <li><a href="Booking.html"><span class="glyphicon glyphicon-tags"></span>  Booking</a></li>
+                    <li><a href="Contact Us.html"><span class="glyphicon glyphicon-earphone"></span>  Contact Us</a></li>
+
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group-sm">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-success btn-sm">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+            </form>
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+       <div class="container">
+        <div class="row">
+           <div class="col-lg-4">
+               <div class="busdetail">
+               <img src="Content/Images/bus%20logo.png" class="buslogo">
+            <h3 style="color:white;">R.S.Yadav Travels</h3>
+               <h5><strong>A/C SEMISLEEPER/SLEEPER(2+2)</strong></h5>
+               <br> 
+               <i class="fa fa-ticket"></i><p style="margin-left:100px;">M-ticket Available</p>
+                 </div>
+               </div>
+            <div class="col-lg-8">
+                <div class="content1">
+                <h3 class="srctodes">Kanpur <i class="fa fa-long-arrow-right"></i> Delhi</h3>
+                    <h4 class="timing">20:00    <i class="fa fa-long-arrow-right"></i>  3:00</h4>
+                    <h6 class="totaltime">07h 00m</h6><br>
+                    <a href="#" class="boardingpoint">Boarding & Dropping Point</a>
+                </div>
+                <div class="content4">
+                <button class="btnrate">3.8/5</button>
+                    <h6 class="totaltime">(45 Rating)</h6>
+                   
+                    <a href="#" class="boardingpoint1">Reviews</a>
+                </div>
+               <div class="content2">
+                   <img class="seat" src="Content/Images/hair-salon%20.png">
+                   <h4 style="margin-top:45px;">18 Seats</h4>
+                   <h5 style="margin-left:75px;">10 Window</h5>
+                </div>
+                <div class="content3">
+                    <h4 style="margin-top:50px;float:right;margin-right:50px;font-size:1.5em;"><strong>INR 810.50</strong></h4>
+                <button class="btnrate2">VIEW SEATS</button>
+                    <a href="#" class="boardingpoint">Cancelation Policy</a>
+                </div>
+                     
+            </div>
+        </div>
+       
+             
+        <div class="row">
+           <div class="col-lg-4">
+               <div class="busdetail">
+               <img src="Content/Images/bus%20logo.png" class="buslogo">
+            <h3 style="color:white;">Rishabh Travels</h3>
+               <h5><strong>Non A/C Seater/SLEEPER(2+1)</strong></h5>
+               <br> 
+               <i class="fa fa-ticket"></i><p style="margin-left:100px;">M-ticket Available</p>
+                 </div>
+               </div>
+            <div class="col-lg-8">
+                <div class="content1">
+                <h3 class="srctodes">Delhi <i class="fa fa-long-arrow-right"></i> Mumbai</h3>
+                    <h4 class="timing">18:30    <i class="fa fa-long-arrow-right"></i>  3:30</h4>
+                    <h6 class="totaltime">33h 00m</h6><br>
+                    <a href="#" class="boardingpoint">Boarding & Dropping Point</a>
+                </div>
+                <div class="content4">
+                <button class="btnrate1">1.5/5</button>
+                    <h6 class="totaltime">(25 Rating)</h6>
+                    
+                    <a href="#" class="boardingpoint1">Reviews</a>
+                </div>
+               <div class="content2">
+                   <img class="seat" src="Content/Images/hair-salon%20.png">
+                   <h4 style="margin-top:45px;">37 Seats</h4>
+                   <h5 style="margin-left:75px;">25 Window</h5>
+                </div>
+                <div class="content3">
+                    <h4 style="margin-top:50px;float:right;margin-right:50px;font-size:1.5em;"><strong>INR 1725.50</strong></h4>
+                <button class="btnrate2">VIEW SEATS</button><br>
+                    <a href="#" class="boardingpoint">Cancelation Policy</a>
+                </div>
+                     
+            </div>
+        </div>
+       
+            
+        
+        </div>
+        
+    
+    <!--Footer Start-->
+  <div class="footerCodebus">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Content/Images/fb.png" class="social" style="height:30px;width:30px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Content/Images/twitter.png" class="social" style="height:30px;width:30px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Content/Images/Instagram.png" class="social" style="height:30px;width:30px;">
+        <h4 class="footerpara">&copy;2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developed By <strong class="companyname">Codelover</strong>.All right reserved.</h4>
+        
+    </div>
+    <!--Footer End-->
+
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</body>
+</html>

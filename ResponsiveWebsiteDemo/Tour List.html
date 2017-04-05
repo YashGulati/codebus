@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <style>
+      .header img{
+            height: 50px;
+            width:50px;
+      }
+      .header a{
+            font-size: 1.4em;
+            color: cadetblue;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 0px;         
+      }
+      .btn-sm{
+            background-color: cadetblue;
+      }
+      .footerCodebus{
+            height: 50px;
+            background-color: black;
+            width: 100%;
+      }
+      .backgroundbus{
+            height: 600px;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;  
+      }
+      .busimage{
+            height: 600px;
+            width: 100%;
+            margin: 0px;
+            padding: 0px; 
+      }
+     .intro-header {
+            height: 700px; 
+            margin: 0px;
+            padding-top: 0px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+            padding-bottom: 50px;
+            text-align: center;
+            background: url('Content/Images/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 700px;
+        }
+        .bg-overlay {
+            background:rgba(0,0,0, 0.5);
+            opacity: 2.0;
+            height: 700px;
+        }
+
+        .intro-message {
+            background-color: skyblue;
+            position: relative;
+            padding-top: 20%;
+            padding-bottom: 20%;
+        }
+        /*Big header*/
+        .intro-message > h1 {
+            margin-top: -50px;
+            font-size: 5em;
+            color: rgba(255, 255, 255, 1.0);
+        }
+        .intro-divider {
+            width: 70px;
+            border-top: 3px solid cadetblue;
+            border-bottom: 3px solid rgba(0,0,0,0.2);
+        }
+        /*small header*/
+        .intro-message > h3 {
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+            color: cadetblue;
+        }
+        .tabledata{
+            border: 3px solid black;
+            align-content: center;
+            text-align: center; 
+            height: 300px;
+            width: 300px;
+            
+        }
+      .footerpara{
+          color: white;
+          float: right;
+          margin-top: 15px;
+          
+      }
+      .companyname{
+          color: darkorange;
+      }
+        nav{
+          height: 55px;
+      }
+      .container-fluid{
+          margin-top: 5px;
+      }
+      .row{
+          width:10
+              0%;
+          align-items: center;
+      }
+      #myTable{
+          border: 2px solid black;
+          border-radius: 5px;
+          width: 50%;
+          margin-top: 100px;
+          margin-bottom: 25px;
+          
+          
+      }
+       #myTable tr,th{
+        text-align: center;
+          
+          
+      }
+      .pagination{
+          float: right;
+      }
+      .info{
+          background-color: cornflowerblue;
+      }
+      .social{
+          margin-top: 10px;
+      }
+    </style>
+<body>
+
+    <!--Header End-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="header">
+                <img src="Content/Images/codebus%20logo.png" alt="logo"/>
+                <a><strong>CodeBus</strong></a>
+                </div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li class="active"><a href="Tour List.html"><span class="glyphicon glyphicon-book"></span>  Tour List</a></li>
+                    <li><a href="Schedule.html"><span class="glyphicon glyphicon-bell"></span>  Schedule</a></li>
+                    <li><a href="Booking.html"><span class="glyphicon glyphicon-tags"></span>  Booking</a></li>
+                    <li><a href="Contact Us.html"><span class="glyphicon glyphicon-earphone"></span>  Contact Us</a></li>
+
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group-sm">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-btn">
+                                <button class="btn btn-success btn-sm">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+            </form>
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+   
+    <div class="container">
+   <table id="myTable" class="table table-striped" align="center"> 
+       <thead>  
+          <tr>  
+            <th>Source</th>  
+            <th>Destination</th>  
+              <th>Kms.</th>
+          </tr> 
+           <tr class="info">
+           <td>Kanpur</td>
+           <td>Lucknow</td>
+               <td>80Km.</td>
+           </tr>
+           <tr>
+           <td>Delhi</td>
+           <td>Mumbai</td>
+                <td>80Km.</td>
+           </tr>
+            <tr class="info">
+           <td>Mumbai</td>
+           <td>Goa</td>
+                 <td>80Km.</td>
+           </tr>
+            <tr>
+           <td>Kanpur</td>
+           <td>Delhi</td>
+                 <td>80Km.</td>
+           </tr>
+           <tr class="info">
+           <td>Kanpur</td>
+           <td>Delhi</td>
+                 <td>80Km.</td>
+           </tr>
+           <tr>
+           <td>Kanpur</td>
+           <td>Delhi</td>
+                 <td>80Km.</td>
+           </tr>
+           <tr class="info">
+           <td>Kanpur</td>
+           <td>Delhi</td>
+                 <td>80Km.</td>
+           </tr>
+              <tr>
+           <td>Kanpur</td>
+           <td>Delhi</td>
+                 <td>80Km.</td>
+           </tr>
+              <tr class="info">
+           <td>Kanpur</td>
+           <td>Delhi</td>
+                 <td>80Km.</td>
+           </tr>
+            <tr class="info">
+           <td>Kanpur</td>
+           <td>Delhi</td>
+                 <td>80Km.</td>
+           </tr>
+            <tr class="info">
+           <td>Kanpur</td>
+           <td>Delhi</td>
+                 <td>80Km.</td>
+           </tr>
+        </thead> 
+       
+    </table>
+  
+        <ul class="pagination">
+  <li><a href="#">1</a></li>
+  <li class="active"><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul>
+        </div>
+    
+    <!--Footer Start-->
+    <div class="footerCodebus">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Content/Images/fb.png" class="social" style="height:30px;width:30px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Content/Images/twitter.png" class="social" style="height:30px;width:30px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="Content/Images/Instagram.png" class="social" style="height:30px;width:30px;">
+        <h4 class="footerpara">&copy;2017&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developed By <strong class="companyname">Codelover</strong>.All right reserved.</h4>
+        
+    </div>
+    <!--Footer End-->
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+<script>
+$(document).ready(function(){
+    $('#myTable').dataTable();
+});
+</script>
+
+</body>
+</html>
