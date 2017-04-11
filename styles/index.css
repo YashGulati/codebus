@@ -1,6 +1,9 @@
 * {
   user-select: none;
 }
+.navbar-inverse {
+  background-color: rgba(34,34,34,0.7) !important;
+}
 .header img {
   height: 50px;
   width: 50px;
@@ -8,25 +11,17 @@
 .header a {
   font-size: 1.4em;
   color: #5f9ea0;
-  text-decoration: none;
   cursor: pointer;
   padding: 0px;
+}
+.header a:hover {
+  text-decoration: none;
 }
 .btn-sm {
   background-color: #5f9ea0;
 }
-.backgroundbus {
-  height: 600px;
-  width: 100%;
-}
-.busimage {
-  height: 600px;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
 .intro-header {
-  height: 600px;
+  height: 90vh;
   margin: 0px;
   text-align: center;
   background: url("../Content/Images/background.jpg") no-repeat center center fixed;
@@ -35,7 +30,7 @@
 .bg-overlay {
   background: rgba(0,0,0,0.5);
   opacity: 2;
-  height: 600px;
+  height: 90vh;
   margin: 0px;
   padding: 0px;
 }
@@ -51,9 +46,9 @@
   color: #fff;
 }
 .intro-divider {
-  margin-left: 620px;
+  margin: 0 auto;
   margin-bottom: 50px;
-  width: 70px;
+  width: 600px;
   border-top: 3px solid #5f9ea0;
   border-bottom: 3px solid rgba(0,0,0,0.2);
 }
@@ -85,6 +80,8 @@ nav {
   height: 50px;
   background-color: #000;
   width: 100%;
+  position: fixed;
+  bottom: 0px;
 }
 .footerCodebus .social {
   margin-top: 10px;
